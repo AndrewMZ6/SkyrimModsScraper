@@ -21,34 +21,34 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
 
-        self.StartButton = QtWidgets.QPushButton(self.centralwidget)
+        self.StartButton = QtWidgets.QPushButton(self.centralwidget)  
         self.StartButton.setGeometry(QtCore.QRect(80, 460, 91, 41))
         self.StartButton.setObjectName("HotButton")
         self.StartButton.clicked.connect(self.HotMods)
 
-        self.progress = QtWidgets.QProgressBar(self.centralwidget)
+        self.progress = QtWidgets.QProgressBar(self.centralwidget)     # Ползунок процесса загрузки
         self.progress.setGeometry(300, 15, 300, 15)
         self.progress.setMaximum(100)
 
-        self.PopularButton = QtWidgets.QPushButton(self.centralwidget)
+        self.PopularButton = QtWidgets.QPushButton(self.centralwidget)  # Кнопка "популярное"
         self.PopularButton.setGeometry(QtCore.QRect(200, 460, 91, 41))
         self.PopularButton.setObjectName("PopularButton")
         self.PopularButton.clicked.connect(self.PopularMods)
 
-        self.NewButton = QtWidgets.QPushButton(self.centralwidget)
+        self.NewButton = QtWidgets.QPushButton(self.centralwidget)  # Кнопка "новое"
         self.NewButton.setGeometry(QtCore.QRect(300, 460, 91, 41))
         self.NewButton.setObjectName("NewButton")
         self.NewButton.clicked.connect(self.NewMods)
 
-        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
+        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)  # Окно вывода текста
         self.textBrowser.setGeometry(QtCore.QRect(60, 50, 691, 361))
         self.textBrowser.setObjectName("textBrowser")
 
-        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label = QtWidgets.QLabel(self.centralwidget)		# Надпись над окном вывода текста
         self.label.setGeometry(QtCore.QRect(60, 20, 91, 20))
         self.label.setObjectName("label")
 
-        self.CloseButton = QtWidgets.QPushButton(self.centralwidget)
+        self.CloseButton = QtWidgets.QPushButton(self.centralwidget) # Кнопка "закрыть"
         self.CloseButton.setGeometry(QtCore.QRect(640, 480, 91, 61))
         self.CloseButton.setObjectName("CloseButton")
         self.CloseButton.clicked.connect(sys.exit)
@@ -139,11 +139,11 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.StartButton.setText(_translate("MainWindow", "HotMods"))
-        self.label.setText(_translate("MainWindow", "Вывод текста"))
-        self.CloseButton.setText(_translate("MainWindow", "Закрыть"))
-        self.PopularButton.setText(_translate("MainWindow", "PopularMods"))
-        self.NewButton.setText(_translate("MainWindow", "NewMods"))
+        self.StartButton.setText(_translate("MainWindow", "hot_Mods"))
+        self.label.setText(_translate("MainWindow", "Results"))
+        self.CloseButton.setText(_translate("MainWindow", "Close"))
+        self.PopularButton.setText(_translate("MainWindow", "popular_Mods"))
+        self.NewButton.setText(_translate("MainWindow", "new_Mods"))
 
 
 if __name__ == "__main__":
