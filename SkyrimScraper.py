@@ -21,7 +21,7 @@ class Ui_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
 
-        self.StartButton = QtWidgets.QPushButton(self.centralwidget)  
+        self.StartButton = QtWidgets.QPushButton(self.centralwidget)  # Кнопка "горячие моды"
         self.StartButton.setGeometry(QtCore.QRect(80, 460, 91, 41))
         self.StartButton.setObjectName("HotButton")
         self.StartButton.clicked.connect(self.HotMods)
